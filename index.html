@@ -9,16 +9,13 @@
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
     rel="stylesheet"
   />
-
   <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
   />
-
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
   <div class="background">
     <div class="blob blob1"></div>
     <div class="blob blob2"></div>
@@ -27,7 +24,6 @@
 
   <main class="login-container">
     <div class="login-card">
-
       <div class="login-left">
         <div class="brand">
           <div class="brand-icon">
@@ -109,7 +105,7 @@
               <input class="form-check-input" type="checkbox" id="remember" />
               <label class="form-check-label" for="remember">Recordarme</label>
             </div>
-            <a href="#" class="link-recover">Recuperar acceso</a>
+            <a href="register.html" class="link-recover">Registrarse</a>
           </div>
 
           <button type="submit" class="btn btn-login">
@@ -123,31 +119,7 @@
     </div>
   </main>
 
-  <script>
-    const form = document.getElementById("loginForm");
-    const message = document.getElementById("message");
-
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
-
-      const email = document.getElementById("email").value.trim();
-      const password = document.getElementById("password").value.trim();
-      const rol = document.getElementById("rol").value;
-
-      if (!email || !password || !rol) {
-        showMessage("Completa todos los campos.", "danger");
-        return;
-      }
-
-      showMessage("Login listo para conectar con JWT.", "success");
-    });
-
-    function showMessage(text, type) {
-      message.className = `alert alert-${type} mt-3`;
-      message.textContent = text;
-      message.classList.remove("d-none");
-    }
-  </script>
-
+  <script src="js/data.js"></script>
+  <script src="js/login.js"></script>
 </body>
 </html>
