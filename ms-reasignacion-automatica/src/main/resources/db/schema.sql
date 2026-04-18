@@ -10,9 +10,9 @@ USE rednorte_reasignacion;
 -- -------------------------------------------------------
 -- Usuario para el microservicio
 -- -------------------------------------------------------
--- CREATE USER IF NOT EXISTS 'rednorte_user'@'localhost' IDENTIFIED BY 'rednorte_pass';
--- GRANT ALL PRIVILEGES ON rednorte_reasignacion.* TO 'rednorte_user'@'localhost';
--- FLUSH PRIVILEGES;
+CREATE USER IF NOT EXISTS 'rednorte_user'@'localhost' IDENTIFIED BY 'rednorte_pass';
+GRANT ALL PRIVILEGES ON rednorte_reasignacion.* TO 'rednorte_user'@'localhost';
+FLUSH PRIVILEGES;
 
 -- -------------------------------------------------------
 -- CITAS
