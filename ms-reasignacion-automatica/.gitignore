@@ -1,0 +1,5 @@
+target/
+.tools/
+.claude/
+*.class
+*.jar
